@@ -1,6 +1,12 @@
+# Description
+Implementing some TimeSeries Analysis using [Redis TimeSeries](https://redis.io/docs/stack/timeseries/), [RedisGears](https://redisgears.io/) with CommandReader type, 
+Facebook [Kats](https://github.com/facebookresearch/Kats) toolkit to analyze time series data.
+
+`WIP`
+
 ## Preparing the environment
 
-:persevere: Struggled a lot trying to install KATS to be run in RedisGears **venv**. 
+:persevere: Struggling a lot trying to install KATS to be run in RedisGears **venv**. 
 
 #### Build image
 ```bash
