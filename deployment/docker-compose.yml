@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  redismod:
+    image: my-redismod
+    build: ./redis
+    ports:
+      - 6379:6379
+    volumes:
+      - ~/.myredis:/data
