@@ -27,9 +27,17 @@ $ pip3 install fbprophet==0.7.1 kats
 $ pip3 install kats
 ```
 
-#### Load RG functions
+#### Load Mocked Data
+Run [Simulator](python/ts-generator.py) for generating synthetic time series data.
+
+#### Load Redis Gears functions
 Run the [python client](python/loader-rgs.py) to load RG functions. 
+See the server log while loading. 
 
-RG functions. 
+RG functions: 
 
-* [Forecaster](python/rg-forecasting.py): 
+* [Forecaster](python/rg-forecasting.py):  Run the forecasting using the Prophet model. 10 predicted values under `predicted` key. 
+
+Next steps: 
+
+* Invoke prediction from a Java Process using [CommandReader](https://oss.redis.com/redisgears/readers.html#commandreader) reader in a RG function. 

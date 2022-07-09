@@ -1,4 +1,4 @@
-# RedisEdge initialization script - RG scripts loader
+# RedisEdge Mocked data generator using Kats Simulator
 import argparse
 from urllib.parse import urlparse
 

@@ -3,6 +3,8 @@ from kats.models.prophet import ProphetModel, ProphetParams
 from kats.consts import TimeSeriesData
 
 KEY = 'tsdata'
+PRED_KEY = 'predicted'
+
 PARAMS = ProphetParams(seasonality_mode='multiplicative')
 DAYS_PREDICTED = 10
 
@@ -31,7 +33,7 @@ def predict(x):
     # for index, row in fcst[len(tsd_df):].iterrows():
     for index, row in fcst.iterrows():
         millisec = round(row['time'].timestamp()*1000)
-        execute('TS.ADD', 'newk', millisec, row['fcst'])
+        execute('TS.ADD', PRED_KEY, millisec, row['fcst'])
 
 gb = GearsBuilder()
 gb.foreach(predict)
