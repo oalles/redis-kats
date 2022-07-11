@@ -5,6 +5,14 @@ services:
     image: my-redismod
     build: ./redis
     ports:
-      - 6379:6379
+      - "6379:6379"
     volumes:
       - ~/.myredis:/data
+
+#  kats-java-client:
+#    restart: always
+#    image: "kats-java-client:latest"
+#    ports:
+#      - "8080:8080"
+#    environment:
+#      - REDIS_HOST=redismod
