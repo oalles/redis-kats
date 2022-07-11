@@ -1,3 +1,10 @@
 redis
 urllib3
 redistimeseries
+numpy
+pandas
+convertdate
+Cython~=0.22
+pystan~=2.18
+fbprophet==0.7.1
+kats

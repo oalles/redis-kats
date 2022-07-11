@@ -6,7 +6,7 @@ from kats.consts import TimeSeriesData
 from kats.utils.simulator import Simulator
 from redistimeseries.client import Client
 
-key = 'tsdata'
+key = 'valuesPerDay'
 
 def generate_data() -> TimeSeriesData:
     # TODO: Externalize var
