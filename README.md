@@ -49,7 +49,7 @@ Watch redis server log while RG functions and dependencies installation are bein
 
 | Name                                    | Description                                                                                                                                                                         |
 |-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Forecaster](python/rg-forecasting.py)  | Contains the forecasting logic using the Prophet model. Trigger: `GetPredictions`. Input args: x[1] days to be predicted. CLI Execution: `RG.TRIGGER GetValuesPerDayPredictions 10` |
+| [Forecaster](python/rg-forecasting.py)  | Contains the forecasting logic using the Prophet model. Trigger: `GetValuesPerDayPredictions`. Input args: x[1] days to be predicted. CLI Execution: `RG.TRIGGER GetValuesPerDayPredictions 10` |
 
 ## Rest Endpoint: 
 
