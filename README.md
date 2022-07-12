@@ -19,8 +19,9 @@ Jupiter notebook provided, containing the Kats logic used in the project: [here]
 docker-compose up # --build # First Time
 ```
 #### Manually install dependencies in RedisGears venv
-:persevere: Struggled a lot trying to install KATS to be run in RedisGears **venv**. 
+:persevere: Struggled a lot trying to install KATS to be run in RedisGears **venv**.  
 The only way I was able to make it work was manually installing dependencies. `:(`
+See [RedisGears Configuration](https://oss.redis.com/redisgears/configuration.html)
 
 ```bash
 $ docker ps # Get process id
@@ -60,3 +61,6 @@ Spring Boot Process offers a Rest endpoint to retrieve the predicted values for 
 curl http://localhost:8080/3
 [{"t":1640995200000,"v":6068.410402495052},{"t":1641081600000,"v":5706.191453574134},{"t":1641168000000,"v":5617.7999465757375}]
 ```
+
+> The Prophet Model needs to be trained to provide accurate results
+
